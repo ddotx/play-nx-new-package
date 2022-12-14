@@ -1,0 +1,18 @@
+{
+  "extends": "nx/presets/npm.json",
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ],
+        "accessToken": "MGU3N2VlNWYtNTA2OC00NWU5LThhZjEtZTZlNjVmMzQ0NWIyfHJlYWQtd3JpdGU="
+      }
+    }
+  }
+}
